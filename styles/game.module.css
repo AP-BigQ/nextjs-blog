@@ -1,0 +1,13 @@
+.game {
+    background-color:rgb(208, 255, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .square{
+    width: 50px;
+    border: 15px groove green;
+    padding: 5px;
+    margin: 2px;
+  }
