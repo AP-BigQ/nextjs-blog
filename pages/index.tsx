@@ -47,6 +47,10 @@ export default function Home({ allPostsData }:{allPostsData: {
       </section>
 
     </Layout>
+
+    <h1 >
+  Dashboard <Link href="/dash"> page!</Link>
+</h1>
     </Auth>
   );
 }

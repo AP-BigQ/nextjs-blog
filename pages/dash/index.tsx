@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from 'next/link';
 import dynamic from 'next/dynamic'
 
 import { Suspense } from 'react';
@@ -56,6 +57,10 @@ export default function IndexPage({children, users}:{children: React.ReactNode, 
     <NoSSR />
 
     </CookiesProvider>
+
+    <h1 >
+  Home <Link href="/"> page!</Link>
+</h1>
 
         </div>
 
