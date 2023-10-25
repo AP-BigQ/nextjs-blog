@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Header() {
     const { data: session, status } = useSession()
     const loading = status === "loading"
-
+  
     return (
         <header>
             <noscript>
@@ -44,7 +44,8 @@ export default function Header() {
                 />
               )}
               <span className={styles.signedInText}>
-                <small>Signed in as</small>
+                <small>Signed in as </small>
+                <strong>{session.user.name ?? ""}</strong>
                 <br />
                 <strong>{session.user.email ?? session.user.name}</strong>
               </span>
@@ -54,6 +55,7 @@ export default function Header() {
                 onClick={(e) => {
                   e.preventDefault()
                   signOut()
+                  
                 }}
               >
                 Sign out
